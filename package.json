@@ -1,0 +1,19 @@
+{
+  "name": "hardhat-project",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "clean": "npx hardhat clean",
+    "test": "npx hardhat test --network localhost",
+    "private-network": "npx hardhat node",
+    "deploy-localhost": "npx hardhat run --network localhost scripts/deploy.ts",
+    "deploy-goerli": "npx hardhat run scripts/deploy.ts --network goerli",
+    "deploy-sepolia": "npx hardhat run scripts/deploy.ts --network sepolia"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "hardhat": "^2.19.4"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  }
+}
